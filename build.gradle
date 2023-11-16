@@ -1,0 +1,47 @@
+apply plugin: 'java-library'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+def versionSerenity = '2.0.80'
+def versionCucumber = '1.9.45'
+def versionAppium = '7.5.1'
+def versionSunMail = '1.6.2'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.80")
+    }
+}
+dependencies {
+    implementation "net.serenity-bdd:serenity-junit:${versionSerenity}"
+    implementation "net.serenity-bdd:serenity-cucumber:${versionCucumber}"
+    implementation "net.serenity-bdd:serenity-core:${versionSerenity}"
+    implementation 'org.slf4j:slf4j-simple:1.7.7'
+    implementation group: 'io.appium', name: 'java-client', version: "${versionAppium}"
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: "${versionSerenity}"
+    implementation "net.serenity-bdd:serenity-ensure:${versionSerenity}"
+    implementation 'org.json:json:20210307'
+    implementation "com.sun.mail:javax.mail:${versionSunMail}"
+    implementation "com.sun.mail:smtp:${versionSunMail}"
+    implementation "com.sun.mail:imap:${versionSunMail}"
+    implementation 'javax.activation:activation:1.1.1'
+
+}
+test {
+    ignoreFailures = true
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+gradle.startParameter.continueOnFailure = true

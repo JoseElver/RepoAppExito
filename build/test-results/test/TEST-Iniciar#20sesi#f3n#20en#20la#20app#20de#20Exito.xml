@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Iniciar sesión en la app de Exito" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-10T23:21:12" hostname="CHMEP97N0KL3" time="40.623">
+  <properties/>
+  <testcase name="Ingresar a la pagina principal" classname="Iniciar sesión en la app de Exito" time="40.623"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[nov. 10, 2023 6:21:28 P. M. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Ingresar a la pagina principal
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>

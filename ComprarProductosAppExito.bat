@@ -1,0 +1,1 @@
+gradle clean test --tests *app.exito.runners.RegistroRunner --info & gradle test --tests *app.exito.runners.InicioSesionRunner --info & gradle test --tests *app.exito.runners.AgregarProductoRunner aggregate --info & cd target/site/serenity & index.html
