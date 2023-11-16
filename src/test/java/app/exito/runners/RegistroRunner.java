@@ -1,7 +1,6 @@
 package app.exito.runners;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
+import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
@@ -9,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/app.exito.features/registro.feature",
         glue = "app.exito.stepDefinitions",
-        snippets = SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 
 public class RegistroRunner {
